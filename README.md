@@ -11,7 +11,9 @@ Luffy bersama Zoro berencana membuat peta tersebut dengan kriteria EniesLobby se
 
 ### Jawaban
 #### Topologi GNS
-Pada kelompok kami setting network configurationnya menyesuaikan dengan prefix IP dari kelompok kami yaitu `10.17`.
+Pada kelompok kami setting network configurationnya menyesuaikan dengan prefix IP dari kelompok kami yaitu `10.17`.  
+
+![Topologi GNS](https://user-images.githubusercontent.com/52129348/141282783-909a55be-2966-4d36-ab7b-94c37daea770.png)  
 
 #### EniesLobby GNS Interfaces (sebagai DNS Server)
 ```
@@ -285,6 +287,8 @@ Pada **Loguetown** (Proxy Client):
     # Disable http_proxy
     #unset http_proxy
    ```
+### Hasil
+![Hasil no.8](https://user-images.githubusercontent.com/52129348/141282738-398ebc08-e746-403f-b7de-dfe011c53781.png)  
 
 
 ### No.9
@@ -317,6 +321,9 @@ Pada **Water7** (Proxy Server):
 5. Tuliskan `bash ~/9.sh` di `~/.bashrc`.
 6. Comment script `8.sh` di `~/.bashrc`.
 
+### Hasil
+![Hasil no.9](https://user-images.githubusercontent.com/52129348/141283380-e77def08-b5ed-4a94-8a71-bf3505455b3a.gif)  
+
 
 ### No.10
 Transaksi jual beli tidak dilakukan setiap hari, oleh karena itu akses internet dibatasi hanya dapat diakses setiap hari Senin-Kamis pukul 07.00-11.00 dan setiap hari Selasa-Jum’at pukul 17.00-03.00 keesokan harinya (sampai Sabtu pukul 03.00) 
@@ -346,8 +353,14 @@ Pada **Water7** (Proxy Server):
    ```
 4. Tuliskan `bash ~/10.sh` di `~/.bashrc`.
 5. Comment script `8.sh` di `~/.bashrc`.
-6. Ubah waktu di Proxy Server untuk melakukan testing.
+6. Ubah waktu di Proxy Server untuk melakukan testing. Contoh perintah: `date -s "9 NOV 2021 13:00:00"`.
 
+### Hasil
+#### Jika bisa
+![Screenshot from 2021-11-11 17-30-08](https://user-images.githubusercontent.com/52129348/141283692-f9d12948-03f1-4c5f-8ba1-6cb13297714e.png)
+
+#### Jika tidak bisa
+-  
 
 ### No.11
 Agar transaksi bisa lebih fokus berjalan, maka dilakukan redirect website agar mudah mengingat website transaksi jual beli kapal. Setiap mengakses `google.com`, akan diredirect menuju `super.franky.C06.com` dengan website yang sama pada soal shift modul 2. Web server `super.franky.C06.com` berada pada node Skypie.
@@ -438,6 +451,13 @@ Pada **Water7** (Proxy Server):
    ```
 2. Tuliskan `bash ~/11.sh` di `~/.bashrc`.
 
+### Hasil
+#### Membuka `http://super.franky.C06.com/`
+![Hasil no.11a](https://user-images.githubusercontent.com/52129348/141285876-57067f98-d4c5-4cd6-a835-a54c6615944e.gif)
+
+#### Redirect `google.com` menuju `http://super.franky.C06.com/`
+![Hasil no.11b](https://user-images.githubusercontent.com/52129348/141286191-30442ebd-ccc5-428a-88f3-b84ade387f18.gif)
+
 
 ### No.12-13
 Saatnya berlayar! Luffy dan Zoro akhirnya memutuskan untuk berlayar untuk mencari harta karun di `super.franky.C06.com`. Tugas pencarian dibagi menjadi dua misi, Luffy bertugas untuk mendapatkan gambar (.png, .jpg), sedangkan Zoro mendapatkan sisanya. Karena Luffy orangnya sangat teliti untuk mencari harta karun, ketika ia berhasil mendapatkan gambar, ia mendapatkan gambar dan melihatnya dengan kecepatan 10 kbps. Sedangkan, Zoro yang sangat bersemangat untuk mencari harta karun, sehingga kecepatan kapal Zoro tidak dibatasi ketika sudah mendapatkan harta yang diinginkannya.
@@ -456,9 +476,9 @@ Pada **Water7** (Proxy Server):
    delay_pools 2
 
    delay_class 1 1
+   delay_access 1 deny zoro
    delay_access 1 allow luffy
    delay_access 1 allow download
-   delay_access 1 deny zoro
    delay_access 1 deny all
    delay_parameters 1 10000/64000
 
@@ -479,3 +499,12 @@ Pada **Water7** (Proxy Server):
    ```
 2. Tuliskan `bash ~/12-13.sh` di `~/.bashrc`.
 
+### Hasil
+#### Akun Luffy
+![Hasil no.12](https://user-images.githubusercontent.com/52129348/141287081-1b79e51f-8876-4f76-8249-0248efbd5726.gif)
+
+#### Akun Zoro
+![Hasil no.13](https://user-images.githubusercontent.com/52129348/141287414-c496f9dc-76bd-4c4c-aa8e-a5b87a59219d.gif)
+
+## Kendala
+* GNS project dari Ubuntu mengalami error `Project ID xxx not found` saat diimport ke GNS di Windows.
