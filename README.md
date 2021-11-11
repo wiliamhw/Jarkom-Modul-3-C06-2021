@@ -357,10 +357,11 @@ Pada **Water7** (Proxy Server):
 
 ### Hasil
 #### Jika bisa
-![Screenshot from 2021-11-11 17-30-08](https://user-images.githubusercontent.com/52129348/141283692-f9d12948-03f1-4c5f-8ba1-6cb13297714e.png)
+![Hasil no.10a](https://user-images.githubusercontent.com/52129348/141283692-f9d12948-03f1-4c5f-8ba1-6cb13297714e.png)
 
 #### Jika tidak bisa
--  
+![Hasil no.10b](https://user-images.githubusercontent.com/52129348/141288863-8853fc42-8aa7-4539-bfbd-fbf04df297d8.gif)
+
 
 ### No.11
 Agar transaksi bisa lebih fokus berjalan, maka dilakukan redirect website agar mudah mengingat website transaksi jual beli kapal. Setiap mengakses `google.com`, akan diredirect menuju `super.franky.C06.com` dengan website yang sama pada soal shift modul 2. Web server `super.franky.C06.com` berada pada node Skypie.
