@@ -501,10 +501,11 @@ Pada **Water7** (Proxy Server):
 
 ### Hasil
 #### Akun Luffy
-![Hasil no.12](https://user-images.githubusercontent.com/52129348/141287081-1b79e51f-8876-4f76-8249-0248efbd5726.gif)
+![Hasil no.12](https://user-images.githubusercontent.com/52129348/141288085-30c026aa-f669-4ef2-90fa-9f5b78f00210.gif)
 
 #### Akun Zoro
-![Hasil no.13](https://user-images.githubusercontent.com/52129348/141287414-c496f9dc-76bd-4c4c-aa8e-a5b87a59219d.gif)
+![Hasil no.13](https://user-images.githubusercontent.com/52129348/141287865-e6caeb7e-dc68-43bd-bb84-ba01efaca1f3.gif)
+
 
 ## Kendala
 * GNS project dari Ubuntu mengalami error `Project ID xxx not found` saat diimport ke GNS di Windows.
