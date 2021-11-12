@@ -90,7 +90,7 @@ Keterangan :
 ### No.2
 dan Foosha sebagai DHCP Relay.
 
-![2](https://user-images.githubusercontent.com/55136116/141514819-8757bd27-ca1e-45e8-94c2-c928e2594afd.jpg)
+![2](https://user-images.githubusercontent.com/55136116/141515484-96f6650a-1786-4f8f-aeeb-bb1f464b8f6b.jpg)
 
 ### Jawaban
 #### Foosha GNS Interfaces (sebagai DHCP Relay)
