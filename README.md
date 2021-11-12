@@ -16,6 +16,9 @@ Pada kelompok kami setting network configurationnya menyesuaikan dengan prefix I
 ![Topologi GNS](https://user-images.githubusercontent.com/52129348/141282783-909a55be-2966-4d36-ab7b-94c37daea770.png)  
 
 #### EniesLobby GNS Interfaces (sebagai DNS Server)
+
+![1a](https://user-images.githubusercontent.com/55136116/141515085-158be49a-8473-41a8-b0d5-d1676002b75e.jpg)
+
 ```
 # Static config for eth0
 auto eth0
@@ -26,6 +29,9 @@ iface eth0 inet static
 ```
 
 #### Jipangu GNS Interfaces (sebagai DHCP Server)
+
+![1b](https://user-images.githubusercontent.com/55136116/141515063-19d7ff33-e7f0-4ae0-881a-5db65699a6c2.jpg)
+
 ```
 # Static config for eth0
 auto eth0
@@ -36,6 +42,9 @@ iface eth0 inet static
 ```
 
 #### Water7 GNS Interfaces (sebagai Proxy Server)
+
+![1c](https://user-images.githubusercontent.com/55136116/141515029-9d1ecdb7-a055-4fba-8913-64cbeda19b1f.jpg)
+
 ```
 # Static config for eth0
 auto eth0
@@ -80,6 +89,8 @@ Keterangan :
 
 ### No.2
 dan Foosha sebagai DHCP Relay.
+
+![2](https://user-images.githubusercontent.com/55136116/141514819-8757bd27-ca1e-45e8-94c2-c928e2594afd.jpg)
 
 ### Jawaban
 #### Foosha GNS Interfaces (sebagai DHCP Relay)
