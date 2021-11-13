@@ -92,6 +92,8 @@ dan Foosha sebagai DHCP Relay.
 
 ![2](https://user-images.githubusercontent.com/55136116/141515484-96f6650a-1786-4f8f-aeeb-bb1f464b8f6b.jpg)
 
+![2a](https://user-images.githubusercontent.com/55136116/141643070-dd97bca4-3122-4832-9b17-ad8f9f0e2e6f.jpg)
+
 ### Jawaban
 #### Foosha GNS Interfaces (sebagai DHCP Relay)
 ```
@@ -154,12 +156,20 @@ Ada beberapa kriteria yang ingin dibuat oleh Luffy dan Zoro, yaitu:
 1. Semua client yang ada **HARUS** menggunakan konfigurasi IP dari DHCP Server.
 2. Client yang melalui Switch1 mendapatkan range IP dari `10.17.1.20` - `10.17.1.99` dan `10.17.1.150` - `10.17.1.169` 
 
+![Inked3](https://user-images.githubusercontent.com/55136116/141643131-b8390a77-d810-443d-9db5-064d0081689c.jpg)
+
 #### No.5
 Client mendapatkan DNS dari **EniesLobby** dan client dapat terhubung dengan 
 internet melalui DNS tersebut.
 
+![6,1](https://user-images.githubusercontent.com/55136116/141643281-5b095e6b-8563-4815-9fcb-4f9f5d7e3acd.jpg)
+
+
 #### No.6
 Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 selama 6 menit dengan waktu maksimal yang dialokasikan untuk peminjaman alamat IP selama 120 menit.
+
+![Inked6,1](https://user-images.githubusercontent.com/55136116/141643318-2c1c3bc2-f1f7-452e-901f-8365911f1214.jpg)
+
 
 ### Jawaban
 Pada **EniesLobby** (DNS Server):
@@ -205,14 +215,20 @@ Pada **Jipangu** (DHCP Server):
 #### No.4
 Client yang melalui Switch3 mendapatkan range IP dari `10.17.3.30` - `10.17.3.50`.
 
+![Inked4](https://user-images.githubusercontent.com/55136116/141643357-d22383ca-0d88-453c-8ced-d6c2e64ad17c.jpg)
+
 #### No.5
 Client mendapatkan DNS dari **EniesLobby** dan client dapat terhubung dengan 
 internet melalui DNS tersebut.
+
+![6](https://user-images.githubusercontent.com/55136116/141643379-84afc771-c892-4c81-ad6a-d5df36b5a84c.jpg)
 
 #### No.6
 Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui 
 Switch2 selama 12 menit dengan waktu maksimal yang dialokasikan untuk 
 peminjaman alamat IP selama 120 menit.
+
+![Inked6](https://user-images.githubusercontent.com/55136116/141643386-8ac19a76-27b9-4868-af92-9630a54b607a.jpg)
 
 ### Jawaban
 Pada **Jipangu** (DHCP Server):
@@ -238,7 +254,11 @@ Luffy dan Zoro berencana menjadikan **Skypie** sebagai server untuk jual beli
 kapal yang dimilikinya dengan alamat IP yang tetap dengan IP `10.17.3.69`.
 
 ### Jawaban
+
 Pada **Jipangu** (DHCP Server):
+
+![Inked7](https://user-images.githubusercontent.com/55136116/141643475-163cd542-7ccd-45da-b2af-44f4c7cc0a56.jpg)
+
 1. Dapatkan hwaddress milik **Skypie** dengan mengeksekusi perintah `ip a` di **Skypie**.
 2. Tuliskan script berikut pada `~/7.sh`:
     ```
@@ -249,13 +269,18 @@ Pada **Jipangu** (DHCP Server):
    }" >> "/etc/dhcp/dhcpd.conf"
     ```
 3. Tuliskan `bash ~/7.sh` di `~/.bashrc`.
-4. Jalankan script di atas dan restart DHCP server dengan perintah `service isc-dhcp-server restart`.  
+4. Jalankan script di atas dan restart DHCP server dengan perintah `service isc-dhcp-server restart`.
+
+![7a](https://user-images.githubusercontent.com/55136116/141643620-d6615d93-586d-4a26-8cb1-0870c97d8daa.jpg)
 
 Pada **Skypie** (DHCP Client):
 1. Restart node.
 2. Tambahkan `hwaddress ether ca:25:dd:4b:6b:17` ke interfaces.
 3. Pastikan ip **Skypie** sama dengan `10.17.3.69` melalui perintah `ip -a`.
 
+![7b](https://user-images.githubusercontent.com/55136116/141643628-4d804ce9-2807-4f0f-b421-23b332b940d2.jpg)
+
+![7c](https://user-images.githubusercontent.com/55136116/141643629-1cc3f0bf-3437-4c5a-91e4-95a0cab61484.jpg)
 
 ### No.8
 **Loguetown** digunakan sebagai client Proxy agar transaksi jual beli dapat terjamin keamanannya, juga untuk mencegah kebocoran data transaksi.
